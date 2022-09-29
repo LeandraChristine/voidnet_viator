@@ -2,7 +2,7 @@
 Scripts, code and printable 3d-files for the Voidnet Viator Cyberdeck
 
 ## Description
-A savage, retro-cyberpunk inspired Cyberdeck with a thrilling human interface, finished for the Hackaday Cyberdeck challenge 2022.
+A savage, retro-cyberpunk inspired Cyberdeck with a focus on human interface, finished for the Hackaday Cyberdeck challenge 2022.
 
 Built to be a heavy-haptics, typing-friendly and portable device with a comparatively low profile the Viator also features a few add-ons for hardware hacking.
 The custom made high ergonomic roll-pin mouse pointer allows typing on the mechanical keyboard and mouse movement in the same hand position.
@@ -12,7 +12,7 @@ To enable project building, 5V power is supplied via two banana jacks and a 8 ch
 A grip handle, cable-containing shoulder strap, flashlight and two 18650 Lion cells make the Viator a viable companion for your next run.
 
 ## Links
-Video - Youtube:
+Video: https://clipchamp.com/watch/iuDfoU8I1nf
 3d Model overview - Fusion: https://a360.co/3SyB80R
 3d Files and Scripts - Github: https://github.com/LeandraChristine/voidnet_viator
 Build - Hackerspace WIKI: https://www.hackerspace-ffm.de/wiki/index.php?title=Voidnet_Viator_Cyberdeck
@@ -32,9 +32,9 @@ Other than the 3d printed parts (all FDM parts printed in black PETG, all Resin 
 - Alumnium Angle 40mm x 20mm, cut to a length of 290mm (the 3d files include 2 drill-guides to help get the holes right)
 - 3x 4mm Brass rods ~330mm length (cut a 1m part into 3, to clamp the 3d printed parts cut a thread at the end of each rod)
 - M4 Nuts to secure the clamping shell to the brass rods
-- M2 cylinder screws of various lengths ()
+- M2 cylinder screws of various lengths
 - M2.5 screws and standoffs of various lengths (for the raspi, USP and waveshare display)
-- M3 cylinder screws of various lengths ()
+- M3 cylinder screws of various lengths
 - Wiring (e.g. 0.14mm), Connectors and general soldering stuff
 - Some USB and MINI-USB connectors to solder (to configure custom wires that are slim enough below the keyboard)
 - Threaded inserts / Knurled Nuts (M3) (pretty much used everywhere)
@@ -81,14 +81,21 @@ Other than the 3d printed parts (all FDM parts printed in black PETG, all Resin 
 - SMALLRIG Ultra Slim 4K HDMI Kabel  Micro HDMI Male to Full HDMI Female 14cm (to expose the 2nd HDMI output on the back, but so far I did not get that to work nicely)
 
 ## Build
+For info on the building process check the Hack-FFM Wiki: https://www.hackerspace-ffm.de/wiki/index.php?title=Voidnet_Viator_Cyberdeck
 
 ### 3d-Files
 If you wish to build a similar device you can probably use a lot of the printed parts, while modifying others to suit your needs.
-Some highlights of the build and pictures can be referenced on the Project Page on my Hackerspace WIKI:
-
 The parts are available on github: https://github.com/LeandraChristine/voidnet_viator
 
 ### Scripts
+
+.ino Files in the teensy folder are for the Teensy LC HID device. Flash them to the teensy with your method of choice (e.g. arduino). Make sure to flash as USB Keyboard + Mouse + Joystick
+
+.py Files can be called via crontab (sudo crontab -e, and then add a line like @reboot python3 /pathtothefile to start the script at boot)
+stats.py displays some general status of the system on the tiny OLED
+shellcharlie.py visualizes the memory status on the CharliePlex display
+the GPIO scripts can be modified to trigger LEDs and take input from switches (the example uses side LEDs to show the battery charge)
+
 
 ## THX
 HackFFM - https://hackaday.io/hackerspace/167562-hackerspace-ffm (especially for helping with the photo shoot and replacements for suddenly dying hardware)
