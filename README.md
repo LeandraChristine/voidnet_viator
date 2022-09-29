@@ -4,11 +4,18 @@ Scripts, code and printable 3d-files for the Voidnet Viator Cyberdeck
 ## Description
 A savage, retro-cyberpunk inspired Cyberdeck with a thrilling human interface, finished for the Hackaday Cyberdeck challenge 2022.
 
+Built to be a heavy-haptics, typing-friendly and portable device with a comparatively low profile the Viator also features a few add-ons for hardware hacking.
 The custom made high ergonomic roll-pin mouse pointer allows typing on the mechanical keyboard and mouse movement in the same hand position.
-This interface is supported by a wide-screen touchscreen, a psp-knob used for scrolling, stereo speakers, USB Hub, a tiny status OLED, GPIO switches and LEDs, and an
-elaborate visualization of the currently used memory.
+This interface is supported by a wide-screen touchscreen, a psp-knob used for scrolling, stereo speakers, USB Hub, a tiny status OLED, GPIO switches + LEDs, and a
+CharliePlex visualization of the currently used memory.
 To enable project building, 5V power is supplied via two banana jacks and a 8 channel signal analyzer mounted under the keyboard.
-Highly portable with a grip handle, cable-organizing shoulder strap, a flashlight and two 18650 Lion cells the Viator is a viable companion for your next run.
+A grip handle, cable-containing shoulder strap, flashlight and two 18650 Lion cells make the Viator a viable companion for your next run.
+
+## Links
+Video - Youtube:
+3d Model overview - Fusion: https://a360.co/3SyB80R
+3d Files and Scripts - Github: https://github.com/LeandraChristine/voidnet_viator
+Build - Hackerspace WIKI: https://www.hackerspace-ffm.de/wiki/index.php?title=Voidnet_Viator_Cyberdeck
 
 ## BOM
 
@@ -24,12 +31,13 @@ Other than the 3d printed parts (all FDM parts printed in black PETG, all Resin 
 - Stero USB Speaker (2 x 0,5W, I used: https://www.berrybase.de/externer-usb-mini-lautsprecher-schwarz)
 - Alumnium Angle 40mm x 20mm, cut to a length of 290mm (the 3d files include 2 drill-guides to help get the holes right)
 - 3x 4mm Brass rods ~330mm length (cut a 1m part into 3, to clamp the 3d printed parts cut a thread at the end of each rod)
+- M4 Nuts to secure the clamping shell to the brass rods
 - M2 cylinder screws of various lengths ()
 - M2.5 screws and standoffs of various lengths (for the raspi, USP and waveshare display)
 - M3 cylinder screws of various lengths ()
 - Wiring (e.g. 0.14mm), Connectors and general soldering stuff
 - Some USB and MINI-USB connectors to solder (to configure custom wires that are slim enough below the keyboard)
-- Threaded inserts / Knurled Nuts (M3)
+- Threaded inserts / Knurled Nuts (M3) (pretty much used everywhere)
 - (optional) microSD / T-Flash to microSD extension (to get to the SD card easier)
 
 ### Rolling mouse
@@ -39,7 +47,7 @@ Other than the 3d printed parts (all FDM parts printed in black PETG, all Resin 
 
 ### Additional Features
 - Adafruit 15x7 CharliePlex LED Matrix Display FeatherWing - Red
-- Adafruit 2,23 inch OLED for Raspberry Pi Pico, 128x32, SPI/I2C
+- Adafruit OLED for Raspberry Pi Pico, 128x32, I2C (scratch that, it died randomly and was replaced by a Generic 0.91 Inch, White 128X32 I2C OLED)
 - AZDelivery Logic Analyzer 8 CH, 24MHz
 - 2x 4mm Banana Jacks (22mm length, one red, one black...I did not like the red I got so a 3d file for resin printing your own is included)
 - InLine 33441G USB 3.1 Adaptercable Male C to Female C (for the charging port connected to the UPS)
@@ -66,8 +74,22 @@ Other than the 3d printed parts (all FDM parts printed in black PETG, all Resin 
 - Cable ties (to attach the belt-buckles to the 4mm rods on the main case)
 
 ### Greeblies
--
--
+- 2x CPU cooler above the speaker covers
+- 1x rectangular cooler on the left side
 
 ### Experimental
 - SMALLRIG Ultra Slim 4K HDMI Kabel  Micro HDMI Male to Full HDMI Female 14cm (to expose the 2nd HDMI output on the back, but so far I did not get that to work nicely)
+
+## Build
+
+### 3d-Files
+If you wish to build a similar device you can probably use a lot of the printed parts, while modifying others to suit your needs.
+Some highlights of the build and pictures can be referenced on the Project Page on my Hackerspace WIKI:
+
+The parts are available on github: https://github.com/LeandraChristine/voidnet_viator
+
+### Scripts
+
+## THX
+HackFFM - https://hackaday.io/hackerspace/167562-hackerspace-ffm (especially for helping with the photo shoot and replacements for suddenly dying hardware)
+For the nice background: https://geekprank.com/hacker/simulator/
