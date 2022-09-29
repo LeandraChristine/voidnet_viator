@@ -13,9 +13,13 @@ A grip handle, cable-containing shoulder strap, flashlight and two 18650 Lion ce
 
 ## Links
 Video: https://clipchamp.com/watch/iuDfoU8I1nf
+
 3d Model overview - Fusion: https://a360.co/3SyB80R
+
 3d Files and Scripts - Github: https://github.com/LeandraChristine/voidnet_viator
+
 Build - Hackerspace WIKI: https://www.hackerspace-ffm.de/wiki/index.php?title=Voidnet_Viator_Cyberdeck
+
 
 ## BOM
 
